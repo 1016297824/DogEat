@@ -195,3 +195,11 @@ C:\Users\19219\RiderProjects\DogEat\bin\Debug\UnityEngine.XRModule.dll
 C:\Users\19219\RiderProjects\DogEat\obj\Debug\DogEat.csproj.Up2Date
 C:\Users\19219\RiderProjects\DogEat\obj\Debug\DogEat.dll
 C:\Users\19219\RiderProjects\DogEat\obj\Debug\DogEat.pdb
+E:\Workspace\Rider\DogEat\bin\Debug\DogEat.dll
+E:\Workspace\Rider\DogEat\bin\Debug\DogEat.pdb
+E:\Workspace\Rider\DogEat\bin\Debug\0Harmony.dll
+E:\Workspace\Rider\DogEat\obj\Debug\DogEat.csproj.AssemblyReference.cache
+E:\Workspace\Rider\DogEat\obj\Debug\DogEat.csproj.CoreCompileInputs.cache
+E:\Workspace\Rider\DogEat\obj\Debug\DogEat.csproj.Up2Date
+E:\Workspace\Rider\DogEat\obj\Debug\DogEat.dll
+E:\Workspace\Rider\DogEat\obj\Debug\DogEat.pdb
