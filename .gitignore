@@ -1,5 +1,6 @@
 # Unity Managed DLLs
 /Managed
+*.dll
 
 # Build outputs
 bin/
@@ -16,6 +17,7 @@ obj/
 
 # Tool files
 tool/
+0Harmony.dll
 
 # Unity
 [Ll]ibrary/
