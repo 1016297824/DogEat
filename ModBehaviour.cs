@@ -17,6 +17,7 @@ namespace DogEat
         private static float nextCheckTime = 0f;
         private static System.Random random = new System.Random();
         private static int foodConsumptionFlag = 0; // 0:未消耗, 1:部分消耗, 2:全部消耗
+        private static int totalConsumptionAmount = 0; // 累加的食物消耗总数
 
         // Unity生命周期事件函数
         private void OnEnable()
@@ -200,6 +201,9 @@ namespace DogEat
             // 确保消耗数量不超过总数量
             consumptionAmount = Math.Min(consumptionAmount, totalFoodCount);
 
+            // 累加消耗数量到全局变量
+            totalConsumptionAmount += consumptionAmount;
+
             // 消耗物品
             int remainingConsumption = consumptionAmount;
             bool playerItemsConsumed = false; // 标记玩家背包物品是否被消耗
@@ -234,7 +238,16 @@ namespace DogEat
                 foodConsumptionFlag = 1; // 部分消耗
             }
 
-            // 显示随机提示语
+            // 宠物显示冒泡框
+            if (totalConsumptionAmount > 20)
+            {
+                // 累计消耗超过20个时，显示特殊提示
+                ShowBubbleText("不行了，吃不下了！！！");
+                // 重置累计消耗数量
+                totalConsumptionAmount = 0;
+            }
+
+            // 玩家显示冒泡框
             if (playerItemsConsumed)
             {
                 // 玩家背包物品被消耗时，只显示"感觉轻松了"和"脚步变轻盈了"
